@@ -19,16 +19,17 @@ class UserController extends Controller
     public function index(){
         //$users = $this->userRepo->getUsers();
         //dd($users);
-         $user = new User();
+        // $user = new User();
         //  $user->name ='Ngoc Van';
         //  $user->email = 'tungocvan@gmail.com';
         //  $user->save();
          //$results = DB::table('users')->get();
 
-        $users = User::all();
-        dd($users);
-
-        return 'UserController';
+        // $users = User::all();
+        // dd($users);
+        $pageHeader = 'pageHeader';
+        $pageFooter ='';
+        return view('Users::list',compact('pageHeader','pageFooter'));
     }
   
 }
