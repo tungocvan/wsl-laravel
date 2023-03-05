@@ -25,8 +25,8 @@ class UserController extends Controller
         //  $user->save();
          //$results = DB::table('users')->get();
 
-        // $users = User::all();
-        // dd($users);
+         $users = User::all();
+         dd($users);
         $pageHeader = 'pageHeader';
         $pageFooter ='';
         return view('Users::list',compact('pageHeader','pageFooter'));

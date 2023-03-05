@@ -3,7 +3,7 @@
  use Modules\Users\src\Http\Controllers\UserController;
  
  Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home-page');
+ });
 
  Route::get('/user', [UserController::class,'index']);
